@@ -3,7 +3,7 @@ import Home from "./Pages/Home";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import CreatePost from "./Pages/CreatePost";
 import { routePath } from "./Routes/route";
-
+import AllPosts from "./Pages/AllPosts";
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
       <Routes>
         <Route path={routePath.home} element={<Home />} />
         <Route path={routePath.create} element={<CreatePost />} />
+        <Route path={routePath.posts} element={<AllPosts />} />
       </Routes>
     </Router>
   );
